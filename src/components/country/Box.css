@@ -1,0 +1,12 @@
+.box{
+    border: 2px solid purple;
+    margin: 10px;
+    padding: 0 20px 10px 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+.name{
+    border: 2px solid purple;
+    padding: 14px;
+    border-radius: 12px;
+}
