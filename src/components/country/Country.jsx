@@ -18,7 +18,7 @@ export default function Country({country, handleVisitedCountryProps}){
             <p>Continents: {continents}</p>
             <p>Population: {population}</p>
             <img src={flags?.png} alt="" />
-            <button onClick={()=> handleVisitedCountryProps(country)}>Mark Visited</button>
+            <button onClick={()=> handleVisitedCountryProps(country)} className="margin-down">Mark Visited</button>
             <br />
             <button onClick={handleVisited} className="margin-right">{visited? "Visited" : "Go"}</button>
             {visited? "Congratulations You visit " + name?.common +'.' : "Click to Visit"}
