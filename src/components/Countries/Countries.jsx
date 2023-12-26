@@ -16,7 +16,7 @@ const Countries = () => {
       <h3>Countries: {countries.length}</h3>
       <div className="country-container">
         {countries.map((soloCountry) => (
-          <Country key={soloCountry.ccn3} country={soloCountry}></Country>
+          <Country key={soloCountry.cca3} country={soloCountry}></Country>
         ))}
       </div>
     </div>
