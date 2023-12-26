@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Box.css"
-export default function Country({country, handleVisitedCountryProps}){
+export default function Country({country, handleVisitedCountryProps, handleAddFlags}){
     console.log(country);
     const {name, continents, population, flags} = country;
 
@@ -19,6 +19,7 @@ export default function Country({country, handleVisitedCountryProps}){
             <p>Population: {population}</p>
             <img src={flags?.png} alt="" />
             <button onClick={()=> handleVisitedCountryProps(country)} className="margin-down">Mark Visited</button>
+            <button onClick={()=> handleAddFlags(country)}>Add Flag</button>
             <br />
             <button onClick={handleVisited} className="margin-right">{visited? "Visited" : "Go"}</button>
             {visited? "Congratulations You visit " + name?.common +'.' : "Click to Visit"}
